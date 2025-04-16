@@ -23,6 +23,7 @@ def login():
     if login_button:
         if username == "admin" and password == "password123":
             st.session_state.logged_in = True
+            st.success("ログイン成功！")
         else:
             st.error("ユーザー名またはパスワードが間違っています")
 
